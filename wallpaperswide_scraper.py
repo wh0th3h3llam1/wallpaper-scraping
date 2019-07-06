@@ -96,7 +96,7 @@ def wallpaper_scraping():
             wget.download(d, download_path + str(i) + ".jpg")
             i += 1
 
-        print("Successfully Downloaded " + i + " Wallpapers.")
+        print("Successfully Downloaded " + str(i) + " Wallpapers.")
 
     except Exception as e:
         print("Error While Downloading Wallpapers : " + str(e))
