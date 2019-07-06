@@ -30,15 +30,17 @@ def wallpaper_scraping():
 
     categories = [
     	'/architecture-desktop-wallpapers',
-    	'/artistic-desktop-wallpapers',
-    	'/black_and_white-desktop-wallpapers',
-    	'/computers-desktop-wallpapers',
-    	'/games-desktop-wallpapers',
-    	'/nature-desktop-wallpapers',
-    	'/space-desktop-wallpapers',
-    	'/sports-desktop-wallpapers',
-    	'/travel-desktop-wallpapers',
-
+        '/artistic-desktop-wallpapers',
+        '/black_and_white-desktop-wallpapers',
+        '/computers-desktop-wallpapers',
+        '/games-desktop-wallpapers',
+        '/girls-desktop-wallpapers',
+        '/nature-desktop-wallpapers',
+        '/parkour-desktop-wallpapers',
+        '/seasons-desktop-wallpapers',
+        '/space-desktop-wallpapers',
+        '/sports-desktop-wallpapers',
+        '/travel-desktop-wallpapers',
     	]
     print()
     print("Category Of Wallpapers -->")
@@ -61,7 +63,7 @@ def wallpaper_scraping():
     pages = int(input("Enter No. of Pages to Scrape : "))
 
 
-    for i in range(1, pages):
+    for i in range(1, pages+1):
         source = requests.get(website + category_selected + '/page/' + str(i)).text
         soup = bs(source, 'lxml')
 
