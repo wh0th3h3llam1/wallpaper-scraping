@@ -114,5 +114,5 @@ def main():
         print("Please Try Again.")
 
     
-
-main()
+if  __name__ == '__main__':
+    main()
